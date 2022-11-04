@@ -11,9 +11,6 @@ const CharacCreate = ({ user, msgAlert }) => {
     const [charac, setCharac] = useState(defaultCharac)
 
     const handleChange = (event) => {
-        // to keep the values as users input info 
-        // first spread the current pet
-        // then comma and modify the key to the value you need
         setCharac({...charac, [event.target.name]: event.target.value})
     }
 
